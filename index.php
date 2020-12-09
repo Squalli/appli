@@ -1,8 +1,11 @@
 <?php
-    session_start();    
-    require_once "MessageService.php";//j'intègre le code présent dans MessageService.php ici
-    require_once "ProductManager.php";
+    require "vendor/autoload.php";
+    use App\Manager\ProductManager;
+
+    session_start();        
+    
     $manager = new ProductManager();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

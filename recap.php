@@ -1,7 +1,8 @@
 <?php
-    require_once "Product.php";
+    require "vendor/autoload.php";
+
     session_start();
-    require_once "MessageService.php";
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
