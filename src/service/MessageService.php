@@ -1,10 +1,11 @@
 <?php
-    namespace App\Service;
     /**
      * Classe/service de gestion des messages (erreur, succès, etc.) en session
      * 
      * @author virgile.gibello@gmail.com
      */
+    namespace App\Service;
+    
     abstract class MessageService {
 
         /**

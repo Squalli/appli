@@ -1,6 +1,7 @@
 {
     "name": "stagiaire/appli",
     "type": "project",
+    "description" : "Tiens la voila ta description !!",
     "license": "GNU",
     "authors": [
         {
