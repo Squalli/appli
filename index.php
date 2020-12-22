@@ -2,6 +2,7 @@
     //CECI EST LE FRONT CONTROLLER ! 
     //c'est le seul fichier en dialogue avec l'utilisateur
     require "vendor/autoload.php";
+    require "config.php";
 
     use App\Service\RouterService;
     
@@ -21,7 +22,7 @@
     ob_start();
     
     //tous les affichages à partir de ob_start() se stockent dans un tampon de sortie
-    include "template/store/".$response["view"];
+    include TEMPLATE_DIR.$response["view"];
 
     //ici, je récupère ce qu'il y a dans le tampon et le met dans une variable 
     //(au lieu de l'afficher directement)
@@ -31,4 +32,4 @@
     //le contenu de celui-ci
     ob_end_clean();
     
-    include "template/layout.php";
+    include TEMPLATE_DIR."layout.php";
